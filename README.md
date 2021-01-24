@@ -1,4 +1,4 @@
-# SEA SEI 125 Mac OSX Install Fest
+# SEA SEI 125 Install Fest
 
 This install fest is adapted from the gitbook notes that can be found [here](https://gawdiseattle.gitbook.io/wdi/00-config-deployment/installfest)
 
