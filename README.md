@@ -215,3 +215,6 @@ There are a few steps to the process, and we are going to follow github's guide 
 
 [Github Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
 
+### Join the google classroom
+
+An invite link will be provided to join the google classroom for the course.
