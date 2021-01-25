@@ -8,11 +8,11 @@ We will be installing and conifguring the following tools to set up your develop
 
 * Slack Desktop - workspace messaging app
 * Homebrew - A commandline package/installation manager 
-* Iterm2 - a hot-rodded terminal app for running commandline shells
+* iterm2 - a hot-rodded terminal app for running commandline shells
 * zshell - a Unix login shell
 * oh-my-zsh - a framework for managing zshell's configuration 
-* git - everyone's favorite content management system
-* vscode - a lgihtweight and flexible code editor designed for web development (and more)
+* GIT - everyone's favorite content management system
+* Vscode - a lightweight and flexible code editor designed for web development (and more)
 
 ### Slack
 
@@ -22,7 +22,7 @@ We will be using slack to communicate throughout the course. You should've recei
 
 ### Homebrew
 
-Homebrew is a package manager that we will use to install various command line tools in our class.
+Homebrew is a command line interface package manager that we will use to install various development tools in our class.
 
 Open up your terminal app and paste the following command into it to install homebrew:
 
@@ -31,7 +31,7 @@ Open up your terminal app and paste the following command into it to install hom
 ```
 If you need to, you can visit the [homebrew website](https://brew.sh/) for more details.
 
-You may be prompted to installed XCode command line tools. When prompted, click and install through that, and you're homebrew installation will continue.
+You may be prompted to install XCode command line tools. When prompted, click yes and you're homebrew installation will continue.
 
 After the installation process, run the command `brew doctor`. If any warnings or errors are displayed, we will need to resolve them before proceeding with the rest of the install fest.
 
@@ -47,7 +47,7 @@ If you need to, you can install Xcode through the App Store. [Link here](https:/
 
 ### iTerm2
 
-Although not strictly required, iTerm2 is a tricked out version of the Terminal app that is the default command line interface for Mac. It will help with the visuals of the command line navigation, especially with ohmyZSH.
+Although not strictly required, iTerm2 is a tricked out version of the Terminal app that is the default command line interface. It will help with the visuals of the command line navigation, especially with ohmyZSH.
 
 Install iTerm2 by copying the following homebrew command into your terminal:
 
@@ -134,7 +134,7 @@ You can also download and install VS Code from [here](https://code.visualstudio.
 
 ### vs code:
 
-**Adding the code Command to your Termianl**
+**Adding the code Command to your Terminal**
 
 First lets configure vscode. For ease of use, let's make it so we can automatically open up any file or project in VS Code, from our command line. The following instructions are taken from [these docs](https://code.visualstudio.com/docs/setup/mac). If you're on a windows or linux, see the left-side menu to switch to the instructions for your machine.
 
@@ -178,7 +178,7 @@ Add the following line in the theme section (near the top) to set the oh-my-zsh 
 ZSH_THEME="af-magic"
 ```
 
-You can of course experiment with different themes or even make your own! there are instructions in the .zshrc file to have a different theme shown in your console everytime your start it up to explore the different flavors. 
+You can of course experiment with different themes or even make your own! There are instructions in the .zshrc file to have a different theme shown in your console everytime your start it up to explore the different flavors. 
 
 **Setting the Shell Editor To Vscode**
 
