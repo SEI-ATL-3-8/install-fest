@@ -7,8 +7,8 @@ This install fest is adapted from the gitbook notes that can be found [here](htt
 We will be installing and conifguring the following tools to set up your development and classroom enviroments:
 
 * Slack Desktop - workspace messaging app
-* Homebrew - A commandline package/installation manager 
-* iterm2 - a hot-rodded terminal app for running commandline shells
+* Homebrew - A command line package/installation manager 
+* iTerm2 - a hot-rodded terminal app for running commandline shells
 * zshell - a Unix login shell
 * oh-my-zsh - a framework for managing zshell's configuration 
 * GIT - everyone's favorite content management system
@@ -31,7 +31,7 @@ Open up your terminal app and paste the following command into it to install hom
 ```
 If you need to, you can visit the [homebrew website](https://brew.sh/) for more details.
 
-You may be prompted to install XCode command line tools. When prompted, click yes and you're homebrew installation will continue.
+You may be prompted to install XCode command line tools. When prompted, click yes and your homebrew installation will continue.
 
 After the installation process, run the command `brew doctor`. If any warnings or errors are displayed, we will need to resolve them before proceeding with the rest of the install fest.
 
@@ -59,7 +59,7 @@ When it has completed, you will be able to find iTerm2 in your applications fold
 
 If you need to, you can also [Download iTerm2 here](https://www.iterm2.com/) manually. Check out the features tab for all of the cool tricks iTerm2 does.
 
-While using iTerm2 in the beginning it may ask your password or for permissions in the mac OS. Click 'yes' all the prompts.
+While using iTerm2 in the beginning it may ask your admin password or for permissions in the mac OS. Click 'yes' all the prompts.
 
 ### zsh
 
@@ -75,9 +75,25 @@ Don't worry, if homebrew noticed you already have it installed running this comm
 
 If it prompts you to change your default shell to zsh, select yes! When it asks you for your password, enter your computer user password \(it wont show up, but iTerm is keeping track of your keystrokes\).
 
+If you are not asked about changing your shell, and you still have a `$` at the beginning of your prompt(meaning your shell is still bash), run the following command and then enter your password: 
+
+```text
+chsh -s /bin/zsh
+```
+
+You can check to see if it worked with this command:
+
+```text
+echo $SHELL
+```
+
+expected output:
+
+> /bin/zsh
+
 ### oh-my-zsh
 
-Oh my ZSH?!!! We will be tricking out commandline even further with [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh). iTerm2 and zsh give you all the functionality your heart can desire, but oh-my-zsh is the real life of the party. It is used to easily configure the look and feel of your commandline.
+Oh my ZSH?!!! We will be tricking out commandline even further with [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh). iTerm2 and zsh give you all the functionality your heart can desire, but oh-my-zsh is the real life of the party. It is used to easily configure the look and feel of your command line.
 
 Copy and past the following command into your terminal to install oh-my-zsh:
 
@@ -89,7 +105,7 @@ Restart your terminal, and you should see a brand new and colorful command promp
 
 ### GIT
 
-Before we do this process, please make sure you have signed up for an account on [Github](http://www.github.com). We will be installing a version of GIT from home brew and also configuring it in a moment.
+We will be installing a version of GIT from home brew and also configuring it in a moment.
 
 To install GIT
 
@@ -138,7 +154,7 @@ You can also download and install VS Code from [here](https://code.visualstudio.
 
 First lets configure vscode. For ease of use, let's make it so we can automatically open up any file or project in VS Code, from our command line. The following instructions are taken from [these docs](https://code.visualstudio.com/docs/setup/mac). If you're on a windows or linux, see the left-side menu to switch to the instructions for your machine.
 
-To be able to open VS Code from any directory, open the Command Palette (Shift+⌘+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command (it will be the first one that comes up).
+First open Vscode and then open the Command Palette with `Shift+⌘+P`. Type type 'shell command' to find the `Shell Command: Install 'code' command in PATH` command (it will be the first one that comes up).
 
 Alternatively, you can achieve this functionality by adding VS Code to your path inside your ~/.zshrc file (zshell config file):
 
@@ -195,7 +211,7 @@ Save your .zshrc file and restart the terminal to enjoy!
 
 **Configuring GIT Locally**
 
-Make sure you have a [github](www.github.com) account and get ready with your user name and account email.
+Before we do this process, please make sure you have signed up for an account on [Github](http://www.github.com) and get ready with your user name and account email.
 
 Using your github username and email, run these commands one by one replacing "YOUR-USERNAME" and "YOUR-EMAIL-ADDRESS" with your personal credentials.
 
