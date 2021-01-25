@@ -170,7 +170,7 @@ The extensions icon looks like this:
 
 **Adding a Useful Color Theme with oh-my-zsh**
 
-Now we will make our termianl extra lit using oh-my-zsh. Use the command `code ~/.zshrc` to open your zsh config file in vscode. It lives in your root folder `~/` and is hidden, hence the `.` before the file name. 
+Now we will use oh-my-zsh to add a usefule color theme to our prompt. Use the command `code ~/.zshrc` to open your zsh config file in vscode. It lives in your root folder `~/` and is hidden, hence the `.` before the file name. 
 
 Add the following line in the theme section (near the top) to set the oh-my-zsh theme to a handy one called 'af-magic'. af-magic will convientently display your git information and working directory in your shell which is very helpful. It also display virtualenv information which will be helpful when we get into python in unit 4.
 
