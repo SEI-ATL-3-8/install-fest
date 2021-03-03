@@ -8,7 +8,7 @@ We will be installing and conifguring the following tools to set up your develop
 
 * Slack Desktop - workspace messaging app
 * Homebrew - A command line package/installation manager 
-* iTerm2 - a hot-rodded terminal app for running commandline shells
+* iTerm2 - our go-to for running terminal
 * zshell - a Unix login shell
 * oh-my-zsh - a framework for managing zshell's configuration 
 * GIT - everyone's favorite content management system
@@ -132,7 +132,7 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update; sudo apt install git
 ```
 
-### Install VS Code
+### Install VSCode
 
 Currently the most popular editor according to developer polls. This is Microsoft's free version of Visual Studio.
 
@@ -182,6 +182,9 @@ The extensions icon looks like this:
 
 [more info about the open in browser extension](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
 
+**User settings**
+In VSCode, go to Code -> Preferences -> Settings. (You can get to the same place by simply hitting `cmd` and `,`.) You can edit some handy settings, the most useful of which might be Autosave and Word Wrap.
+
 ### zshell
 
 **Adding a Useful Color Theme with oh-my-zsh**
@@ -211,25 +214,12 @@ Save your .zshrc file and restart the terminal to enjoy!
 
 **Configuring GIT Locally**
 
-Before we do this process, please make sure you have signed up for an account on [Github](http://www.github.com) and get ready with your user name and account email.
-
-Using your github username and email, run these commands one by one replacing "YOUR-USERNAME" and "YOUR-EMAIL-ADDRESS" with your personal credentials.
-
+From any folder, run
 ```text
-git config --global init.defaultBranch main
-git config --global user.name "YOUR-USERNAME"
-git config --global user.email "YOUR-EMAIL-ADDRESS"
-git config --global push.default simple
-git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=28800'
 ```
+This will make it so that when you enter your username and password in git, it doesn't ask you again for 8 hours. (28800 is 8 hours, converted to seconds.) You can change that timeout number to anything!
 
-**Setting up SSH Key**
-
-In this next part we will generate a SSH key on our local machine, and then link it to our github account. This is to prevent github from demanding login credentials everytime you want to push to github from your local machine.
-
-There are a few steps to the process, and we are going to follow github's guide found here:
-
-[Github Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
 
 ### Join the google classroom
 
