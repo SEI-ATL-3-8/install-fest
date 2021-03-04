@@ -210,6 +210,11 @@ export EDITOR="code -w"
 
 Save your .zshrc file and restart the terminal to enjoy!
 
+## Joining the class github
+First off, if you don't have an account on github.com, now is the time to make one! If you don't have an avatar photo, you should add one of those too.
+
+We are going to use slack to collect everyone's github usernames, so we can add you to our class organization.
+
 ## Configuring Git
 
 **Configuring GIT Locally**
@@ -223,4 +228,4 @@ This will make it so that when you enter your username and password in git, it d
 
 ### Join the google classroom
 
-An invite link will be provided to join the google classroom for the course.
+Join our google classroom here: https://classroom.google.com/c/Mjg2MTIyNzE5MzA2?cjc=2r3qzdz
