@@ -20,6 +20,11 @@ We will be using slack to communicate throughout the course. You should've recei
 
 [Download Slack](https://slack.com/downloads)
 
+### Windows users
+
+Because Windows is not a Linux environment, you will have to install Git Bash to use the command line commands we'll be learning in this course. Download the necessary command line program [here](https://git-scm.com/download/win) and install the program on your machine.
+
+
 ### Homebrew
 
 Homebrew is a command line interface package manager that we will use to install various development tools in our class.
