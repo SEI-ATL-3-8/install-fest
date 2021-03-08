@@ -35,6 +35,8 @@ You may be prompted to install XCode command line tools. When prompted, click ye
 
 After the installation process, run the command `brew doctor`. If any warnings or errors are displayed, we will need to resolve them before proceeding with the rest of the install fest.
 
+*FINISH LINE*: When you run the command `which brew`, you see a filepath with slashes, for example: `/usr/local/bin/brew`. If you see nothing, or a message like `brew not found`, you're not done!
+
 ### Xcode
 
 We do not use Xcode in class but some other applications that we do use require some Xcode libraries. Normally, all you need is the Xcode CLI which should have already been installed when you installed Homebrew. If it didn't get installed, you can use this command:
@@ -44,6 +46,8 @@ xcode-select --install
 ```
 
 If you need to, you can install Xcode through the App Store. [Link here](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+
+*FINISH LINE*: `xcode-select --version` yields `xcode-select version <some number>`
 
 ### iTerm2
 
@@ -60,6 +64,8 @@ When it has completed, you will be able to find iTerm2 in your applications fold
 If you need to, you can also [Download iTerm2 here](https://www.iterm2.com/) manually. Check out the features tab for all of the cool tricks iTerm2 does.
 
 While using iTerm2 in the beginning it may ask your admin password or for permissions in the mac OS. Click 'yes' all the prompts.
+
+*FINISH LINE*: You can use Spotlight search to open iterm2. There are two ways to open spotlight search: the magnifying glass icon in your upper right corner, or `⌘ + space`. Once you have it open, type in "iterm2", it should find the application and be able to open it.
 
 ### zsh
 
@@ -83,14 +89,10 @@ chsh -s /bin/zsh
 
 You can check to see if it worked with this command:
 
-```text
-echo $SHELL
+*FINISH LINE*: `echo $SHELL` yields 
 ```
-
-expected output:
-
 > /bin/zsh
-
+```
 ### oh-my-zsh
 
 Oh my ZSH?!!! We will be tricking out commandline even further with [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh). iTerm2 and zsh give you all the functionality your heart can desire, but oh-my-zsh is the real life of the party. It is used to easily configure the look and feel of your command line.
@@ -101,7 +103,7 @@ Copy and past the following command into your terminal to install oh-my-zsh:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Restart your terminal, and you should see a brand new and colorful command prompt.
+*FINISH LINE*: Restart your terminal, and you should see a brand new and colorful command prompt.
 
 ### GIT
 
@@ -132,6 +134,8 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update; sudo apt install git
 ```
 
+*FINISH LINE*: `git --version` yields `2.30.0`, or higher
+
 ### Install VSCode
 
 Currently the most popular editor according to developer polls. This is Microsoft's free version of Visual Studio.
@@ -145,6 +149,8 @@ brew install --cask visual-studio-code
 vscode will appear in your applications folder when the installation is completed 
 
 You can also download and install VS Code from [here](https://code.visualstudio.com/download)
+
+*FINISH LINE*: You can open vscode through spotlight search
 
 ## UNIT 1 Configs:
 
@@ -171,6 +177,8 @@ export PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/b
 ```
 
 Restart the terminal for the new $PATH value to take effect. You'll be able to type `code .` in any folder to start editing files in that folder. You can also open specific files with `code [filenname]`
+
+*FINISH LINE*: From the command line, you can type `code .` and open whatever directory you're currently in in vscode.
 
 **Installing the Open In Browser Extension**
 
