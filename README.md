@@ -223,6 +223,8 @@ First off, if you don't have an account on github.com, now is the time to make o
 
 We are going to use slack to collect everyone's github usernames, so we can add you to our class organization.
 
+*FINISH LINE*: you're listed in the People section here: https://github.com/SEI-ATL-3-8
+
 ## Configuring Git
 
 **Configuring GIT Locally**
@@ -233,6 +235,7 @@ git config --global credential.helper 'cache --timeout=28800'
 ```
 This will make it so that when you enter your username and password in git, it doesn't ask you again for 8 hours. (28800 is 8 hours, converted to seconds.) You can change that timeout number to anything!
 
+*FINISH LINE*: When we get to this afternoon's lab on How to turn in a Deliverable, you shouldn't have to enter your github username and password more than once.
 
 ### Join the google classroom
 
